@@ -18,3 +18,15 @@ html[dir=rtl] body{font-family:'Cairo',Arial,sans-serif}html[dir=rtl] h1,html[di
 .soon{position:relative;isolation:isolate}.soon:before{content:'';position:absolute;z-index:-1;width:45%;height:100%;right:0;top:0;background:#e7f5fe;border-radius:55% 0 0 45%}
 .soon:after{content:'✦';position:absolute;right:12%;top:14%;font-size:44px;color:#e5c900;pointer-events:none}.soon .ornament{color:#42b1d1}
 @media(max-width:680px){.hero-copy:after{right:0;top:0;font-size:25px}.soon:before{width:34%;opacity:.7}.soon:after{right:7%;top:2%;font-size:30px}.soon h1{font-size:clamp(54px,13vw,85px)}}
+
+/* A closer match to the supplied school-poster composition. */
+:root{--sky:#e8f6ff;--cyan:#56b8dd;--yellow:#f0dc00;--ink:#19164c;--red:#de3048}
+body{background:#fff}.hero{position:relative;isolation:isolate;padding-top:65px;padding-bottom:85px}
+.hero:before{content:'';position:absolute;inset:0 calc((100vw - 100%)/-2);z-index:-1;background:url('/assets/poster-background.svg') center/100% 100% no-repeat}
+h1{font-size:clamp(64px,7.2vw,103px);line-height:.93;letter-spacing:-1.5px}h1 em{display:inline-block;color:var(--cyan);transform:rotate(-3deg);margin-top:7px}h2 em{color:#2583a3}
+.hero .eyebrow{letter-spacing:2.5px}.hero-copy>p{color:#3e4c68}.hero-copy:after{color:var(--yellow)}
+.hero-art,.hero-art img{border-radius:43% 53% 39% 47% / 47% 40% 52% 42%}.hero-art{min-height:540px}.art-label{left:35px;bottom:55px}.art-stamp{background:var(--yellow);border:0;outline:7px solid white;color:var(--ink)}
+.values-strip{background:white}.values-strip b{color:var(--cyan)}.campaign-section{background:var(--sky);border-radius:9% 0 8% 0 / 45px 0 45px 0}.connect{background:var(--sky);color:var(--ink);border-radius:8% 0 0 0 / 45px 0 0 0}.connect .eyebrow{color:#b3233a}.connect em{color:#2583a3}.connect p,.connect small{color:#465774}.connect .cream{background:var(--red);color:white}.connect .cream:hover{background:#b51e38}.connect .outline{border-color:var(--ink);color:var(--ink)}.connect .outline:hover{background:white}.connect-star{color:var(--cyan);opacity:.3}
+.soon{background:url('/assets/poster-background.svg') center/100% 100% no-repeat}.soon:before,.soon:after{display:none}.soon h1{font-size:clamp(65px,10vw,130px);line-height:.95}.soon h1 em{color:var(--cyan)}.soon .ornament{color:var(--yellow)}.soon .eyebrow{letter-spacing:3px}.soon .arabic{font-family:'Cairo',Arial,sans-serif}
+html[dir=rtl] h1{line-height:1.35;font-size:clamp(48px,5.8vw,78px)}html[dir=rtl] h1 em{transform:rotate(2deg)}
+@media(max-width:680px){.hero{padding-top:35px;padding-bottom:50px}.hero:before{background-size:auto 100%;background-position:60% center}h1{font-size:clamp(58px,14vw,84px)}.hero-art{min-height:420px}.hero-art img{border-radius:43% 53% 39% 47% / 47% 40% 52% 42%}.art-label{bottom:45px;font-size:21px}.soon{background-position:60% center;background-size:auto 100%}.soon .social-actions{padding:0}.soon .eyebrow{letter-spacing:1.5px;font-size:9px}.soon h1{font-size:clamp(56px,14vw,88px)}.connect h2{font-size:50px}}
