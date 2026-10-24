@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    { "source": "/Testing", "destination": "/Testing/index.html" }
+  ],
+  "headers": [
+    { "source": "/Testing", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] },
+    { "source": "/Testing/:path*", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] }
+  ]
+}
