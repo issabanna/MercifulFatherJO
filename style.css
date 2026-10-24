@@ -30,3 +30,23 @@ h1{font-size:clamp(64px,7.2vw,103px);line-height:.93;letter-spacing:-1.5px}h1 em
 .soon{background:url('/assets/poster-background.svg') center/100% 100% no-repeat}.soon:before,.soon:after{display:none}.soon h1{font-size:clamp(65px,10vw,130px);line-height:.95}.soon h1 em{color:var(--cyan)}.soon .ornament{color:var(--yellow)}.soon .eyebrow{letter-spacing:3px}.soon .arabic{font-family:'Cairo',Arial,sans-serif}
 html[dir=rtl] h1{line-height:1.35;font-size:clamp(48px,5.8vw,78px)}html[dir=rtl] h1 em{transform:rotate(2deg)}
 @media(max-width:680px){.hero{padding-top:35px;padding-bottom:50px}.hero:before{background-size:auto 100%;background-position:60% center}h1{font-size:clamp(58px,14vw,84px)}.hero-art{min-height:420px}.hero-art img{border-radius:43% 53% 39% 47% / 47% 40% 52% 42%}.art-label{bottom:45px;font-size:21px}.soon{background-position:60% center;background-size:auto 100%}.soon .social-actions{padding:0}.soon .eyebrow{letter-spacing:1.5px;font-size:9px}.soon h1{font-size:clamp(56px,14vw,88px)}.connect h2{font-size:50px}}
+
+/* Coordinated English and Arabic brand typography. */
+:root{--font-display:'Barlow Condensed',Impact,'Arial Narrow',sans-serif;--font-body:'Nunito Sans',Arial,sans-serif;--font-arabic:'Cairo',Tahoma,Arial,sans-serif}
+body{font-family:var(--font-body)}h1,h2,h3,.illustration-caption,.christmas-script{font-family:var(--font-display)}
+html[lang=ar] body,html[lang=ar] h1,html[lang=ar] h2,html[lang=ar] h3,html[lang=ar] .illustration-caption,html[lang=ar] .christmas-script{font-family:var(--font-arabic)}
+html[lang=ar] .eyebrow,html[lang=ar] .step,html[lang=ar] .card-meta,html[lang=ar] .brand-sub,html[lang=ar] .values-strip span{letter-spacing:0}
+html[lang=ar] .brand-sub{direction:rtl;font-family:var(--font-arabic);font-size:9px}
+html[lang=ar] h3{line-height:1.6}html[lang=ar] .button{line-height:1.8}html[lang=ar] .hero-copy>p{line-height:2}
+html[lang=ar] .card-art{direction:rtl}html[lang=ar] .pill{left:auto;right:22px}html[lang=ar] .illustration-caption,html[lang=ar] .christmas-script{direction:rtl;text-align:right;line-height:1.5;font-size:25px}
+html[lang=ar] .arrow{right:auto;left:25px;transform:scaleX(-1)}
+.soon-header{display:flex;align-items:center;justify-content:space-between;gap:20px}#language{min-height:44px;min-width:65px;border:1px solid var(--line);border-radius:6px;background:white;font-family:var(--font-arabic);font-weight:700}
+.art-stamp .stamp-label{font-size:8px;line-height:1.5}.art-stamp{gap:6px}html[lang=ar] .art-stamp .stamp-label{font-size:9px}
+html[lang=ar] .soon h1{font-size:clamp(48px,7vw,90px);line-height:1.5}
+@media(max-width:680px){html[lang=ar] .soon h1{font-size:clamp(40px,11vw,65px)}html[lang=ar] .hero h1{font-size:clamp(40px,10vw,60px)}.soon-header .brand{font-size:11px}}
+
+/* Original community photographs: large, uncropped, and responsive. */
+.hero-photo{margin:0;position:relative;align-self:center;min-width:0}.hero-photo img{display:block;width:100%;height:auto;border-radius:12px;box-shadow:16px 16px 0 #c4eafb}.hero-photo figcaption{position:relative;display:table;margin:0 15px 0 auto;padding:12px 20px;background:#fff;color:var(--ink);font-weight:800;font-size:13px;transform:rotate(-2deg);border-bottom:3px solid var(--yellow)}
+.photo-story{padding-bottom:20px}.photo-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}.photo-grid figure{margin:0;min-width:0}.photo-grid img{display:block;width:100%;height:auto;border-radius:12px;background:var(--sky)}.photo-grid figure:nth-child(2){margin-top:70px}.photo-grid figcaption{font-size:15px;font-weight:700;padding:17px 0;color:var(--ink)}
+@media(min-width:1000px){.hero{grid-template-columns:1fr 1.3fr;gap:45px}.hero h1{font-size:clamp(65px,6.3vw,90px)}}
+@media(max-width:680px){.hero-photo{margin:5px 10px 0 0}.hero-photo img{box-shadow:10px 10px 0 #c4eafb}.hero-photo figcaption{font-size:12px;padding:10px 12px}.photo-grid{grid-template-columns:1fr;gap:20px}.photo-grid figure:nth-child(2){margin-top:0}.photo-story{padding-bottom:0}}
